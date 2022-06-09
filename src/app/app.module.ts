@@ -9,6 +9,7 @@ import { UserComponent } from './components/user/user.component';
 import { CarteVisiteComponent } from './components/carte-visite/carte-visite.component';
 import { AlertButtonComponent } from './components/alert-button/alert-button.component';
 import { ListeComponent } from './components/liste/liste.component';
+import { MagieComponent } from './components/magie/magie.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ListeComponent } from './components/liste/liste.component';
     UserComponent,
     CarteVisiteComponent,
     AlertButtonComponent,
-    ListeComponent
+    ListeComponent,
+    MagieComponent
   ],
   imports: [
     BrowserModule,
