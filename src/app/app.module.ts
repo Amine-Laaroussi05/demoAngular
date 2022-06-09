@@ -11,6 +11,7 @@ import { AlertButtonComponent } from './components/alert-button/alert-button.com
 import { ListeComponent } from './components/liste/liste.component';
 import { MagieComponent } from './components/magie/magie.component';
 import { ListeFiltreComponent } from './components/liste-filtre/liste-filtre.component';
+import { Exo1Component } from './components/exo1/exo1.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ListeFiltreComponent } from './components/liste-filtre/liste-filtre.com
     AlertButtonComponent,
     ListeComponent,
     MagieComponent,
-    ListeFiltreComponent
+    ListeFiltreComponent,
+    Exo1Component
   ],
   imports: [
     BrowserModule,

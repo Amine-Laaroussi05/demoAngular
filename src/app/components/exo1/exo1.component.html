@@ -1,0 +1,24 @@
+<div class="container">
+    <div *ngFor="let user of users, let i = index">
+        <div class="background" *ngIf="i%2 ===0">
+            <div class="card-header">
+                {{ user.company.name }}
+                <div class="card" [hidden]="user.hidden">
+                    <div class="name">
+                        {{ user.name }}
+                    </div>
+                    <div class="info">
+                        <p>Site : {{ user.website }}</p>
+                        <p>email : {{ user.email }}</p>
+                        <p>Telephone : {{ user.phone }}</p>
+                        <p>{{user.hidden}}</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button (click)="switchOn(users,i)">Afficher</button>
+                    <button (click)="switchOff(users,i)">Cacher</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
