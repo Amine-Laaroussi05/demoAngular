@@ -10,6 +10,7 @@ import { CarteVisiteComponent } from './components/carte-visite/carte-visite.com
 import { AlertButtonComponent } from './components/alert-button/alert-button.component';
 import { ListeComponent } from './components/liste/liste.component';
 import { MagieComponent } from './components/magie/magie.component';
+import { ListeFiltreComponent } from './components/liste-filtre/liste-filtre.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MagieComponent } from './components/magie/magie.component';
     CarteVisiteComponent,
     AlertButtonComponent,
     ListeComponent,
-    MagieComponent
+    MagieComponent,
+    ListeFiltreComponent
   ],
   imports: [
     BrowserModule,
