@@ -16,6 +16,8 @@ import { Exercice1Component } from './components/exercice1/exercice1.component';
 import { DateComponent } from './components/date/date.component';
 import { ButtonAlertComponent } from './components/button-alert/button-alert.component';
 import { ButtonMenuComponent } from './components/button-menu/button-menu.component';
+import { Exo2ParentComponent } from './components/exo2-parent/exo2-parent.component';
+import { Exo2EnfantComponent } from './components/exo2-enfant/exo2-enfant.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ButtonMenuComponent } from './components/button-menu/button-menu.compon
     Exercice1Component,
     DateComponent,
     ButtonAlertComponent,
-    ButtonMenuComponent
+    ButtonMenuComponent,
+    Exo2ParentComponent,
+    Exo2EnfantComponent
   ],
   imports: [
     BrowserModule,
