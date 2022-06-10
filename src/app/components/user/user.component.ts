@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  nom: string = "François";
-  prenom: string = "Cloclo";
-  imageUrl: string = "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2009/11/claude-francois-011.jpg?resize=230,275";
-  job: string = '';
+  nom: string = "Laaroussi";
+  prenom: string = "Amine";
+  imageUrl: string = "https://thumbs.dreamstime.com/z/le-nombre-irrationnel-de-constante-math%C3%A9matique-symbole-pi-sur-cercle-lettre-grecque-127553115.jpg";
+  job: string = "";
+
 
   constructor() { }
 

@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.bordure {
+    border: 1px solid black;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.background {
+    background-color: green;
+    width: 200px;
+    height: 150px; // 1/2 la hauteur de la bordure
+    margin-top: 75px; // 1/4 la hauteur de la bordure
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 40px;
+}
+
+.greenbox {
+    height: 20px;
+    width: 80px;
+    background-color: green;
+}
+
+.smallContainer {
+    display: flex;
+    justify-content: right;
+}
+
+.background h1 {
+    color: white;
+    text-align: center;
+}
+
+.infos {
+    margin-top: 20px;
+}
+
+.details {
+    margin-top: 30px;
+}

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MagieComponent implements OnInit {
 
-  hidden: boolean = true;
+hidden: boolean = true;
 
   constructor() { }
 

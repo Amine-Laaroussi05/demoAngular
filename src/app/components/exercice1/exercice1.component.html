@@ -1,0 +1,25 @@
+<div class="container" *ngFor="let user of users">
+    <div class="bordure">
+        <div class="background">
+            <h1>
+                {{user.company.name}}
+            </h1>
+        </div>
+        <div class="informations">
+            <div class="smallContainer">
+                <div class="greenbox">
+                </div>
+            </div>
+            <div class="infos">
+                <div class="Titre">
+                    <h1>{{user.name}}</h1>
+                </div>
+                <div class="details">
+                    <p>Email: {{user.email}}</p>
+                    <p>Telephone: {{user.phone}}</p>
+                    <p>Site Web: {{user.website}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

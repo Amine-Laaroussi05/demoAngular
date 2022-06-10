@@ -12,6 +12,9 @@ import { ListeComponent } from './components/liste/liste.component';
 import { MagieComponent } from './components/magie/magie.component';
 import { ListeFiltreComponent } from './components/liste-filtre/liste-filtre.component';
 import { Exo1Component } from './components/exo1/exo1.component';
+import { Exercice1Component } from './components/exercice1/exercice1.component';
+import { DateComponent } from './components/date/date.component';
+import { ButtonAlertComponent } from './components/button-alert/button-alert.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { Exo1Component } from './components/exo1/exo1.component';
     ListeComponent,
     MagieComponent,
     ListeFiltreComponent,
-    Exo1Component
+    Exo1Component,
+    Exercice1Component,
+    DateComponent,
+    ButtonAlertComponent
   ],
   imports: [
     BrowserModule,

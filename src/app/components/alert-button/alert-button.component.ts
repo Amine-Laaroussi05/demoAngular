@@ -12,8 +12,8 @@ export class AlertButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick(): void {
-    alert("On t'a dit de pas cliquer, c******! <3")
+  onClick() :void{
+    alert("Impossible. Le bouton ne marche pas correctement à cause de l'inflation.")
   }
 
 }

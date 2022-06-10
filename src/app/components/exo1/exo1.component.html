@@ -1,6 +1,6 @@
 <div class="container">
     <div *ngFor="let user of users, let i = index">
-        <div class="background" *ngIf="i%2 ===0">
+        <div class="background" *ngIf="i%2 ===1">
             <div class="card-header">
                 {{ user.company.name }}
                 <div class="card" [hidden]="user.hidden">
