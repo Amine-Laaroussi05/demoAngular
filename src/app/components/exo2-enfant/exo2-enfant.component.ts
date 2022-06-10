@@ -11,18 +11,11 @@ export class Exo2EnfantComponent implements OnInit {
   ville!:string;
 
   @Input()
-  zone!:number;
+  time!:Date;
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  time(n: number): Date{
-    let d = new Date();
-    d.setHours(d.getHours()+n);
-    setTimeout(() => 1000);
-    return d;
   }
 
 }

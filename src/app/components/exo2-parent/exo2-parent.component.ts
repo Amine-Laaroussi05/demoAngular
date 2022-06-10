@@ -33,4 +33,10 @@ export class Exo2ParentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  time(zone: number): Date{
+    let date = new Date();
+    date.setHours(date.getHours()+ zone);
+    setInterval(() => 1000);
+    return date;
+  }
 }
