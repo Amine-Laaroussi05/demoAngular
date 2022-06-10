@@ -15,6 +15,7 @@ import { Exo1Component } from './components/exo1/exo1.component';
 import { Exercice1Component } from './components/exercice1/exercice1.component';
 import { DateComponent } from './components/date/date.component';
 import { ButtonAlertComponent } from './components/button-alert/button-alert.component';
+import { ButtonMenuComponent } from './components/button-menu/button-menu.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ButtonAlertComponent } from './components/button-alert/button-alert.com
     Exo1Component,
     Exercice1Component,
     DateComponent,
-    ButtonAlertComponent
+    ButtonAlertComponent,
+    ButtonMenuComponent
   ],
   imports: [
     BrowserModule,
