@@ -1,0 +1,75 @@
+<div class="container">
+    <div *ngFor="let infosUtilisateur of infosUtilisateurs">
+        <div class="bordure">
+            <div class="background">
+                <h1>
+                    {{infosUtilisateur.entreprise}}
+                </h1>
+            </div>
+            <div class="informations">
+                <div class="smallContainer">
+                    <div class="greenbox">
+                    </div>
+                </div>
+                <div class="infos">
+                    <div class="Titre">
+                        <h1>{{infosUtilisateur.prenom}} {{infosUtilisateur.nom}}</h1>
+                    </div>
+                    <div class="details">
+                        <p>Email: {{infosUtilisateur.email}}</p>
+                        <p>Telephone: {{infosUtilisateur.telephone}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h3>
+    Ajouter un utilisateur
+</h3>
+
+<form [formGroup]="infosUtilisateur" (ngSubmit)="onSubmit()">
+    <label for="entreprise">
+    Entreprise:
+      <input type="text" formControlName="entreprise">
+      <span *ngIf="submitted && form['entreprise'].invalid">
+        * Entreprise invalide
+      </span>
+  </label>
+
+    <label for="nom">
+    Nom:
+      <input type="text" formControlName="nom">
+      <span *ngIf="submitted && form['nom'].invalid">
+        * Nom invalide
+      </span>
+  </label>
+
+    <label for="prenom">
+    Prenom:
+      <input type="text" formControlName="prenom">
+      <span *ngIf="submitted && form['prenom'].invalid">
+        * Prenom invalide
+      </span>
+  </label>
+
+    <label for="email">
+    Email:
+      <input type="text" formControlName="email">
+      <span *ngIf="submitted && form['email'].invalid">
+        * Email invalide
+      </span>
+  </label>
+
+    <label for="telephone">
+    Telephone:
+      <input type="text" formControlName="telephone">
+      <span *ngIf="submitted && form['telephone'].invalid">
+        * Telephone invalide
+      </span>
+  </label>
+
+    <button type="submit">Ajouter</button>
+</form>

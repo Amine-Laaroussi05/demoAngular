@@ -13,8 +13,8 @@ export class ReactiveListeCoursesComponent implements OnInit {
 
   constructor() {
     this.article = new FormGroup({
-      designation: new FormControl(''),
-      prix: new FormControl('')
+      designation: new FormControl('', Validators.required),
+      prix: new FormControl('',Validators.required)
     })
    }
 
