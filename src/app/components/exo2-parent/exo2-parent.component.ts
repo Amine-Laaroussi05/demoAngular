@@ -7,24 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Exo2ParentComponent implements OnInit {
 
-  villesTimes: any = [
-    {
-      ville: 'Paris',
-      time: 0,
-    },
-    {
-      ville: 'New York',
-      time: -6,
-    },
-    {
-      ville: 'Amsterdam',
-      time:0
-    },
-    {
-      ville: 'Tokyo',
-      time: 7,
-    }
-  ]
+  timeZones: string[] = [
+      'Europe/Paris', 'America/New_York', 'Europe/Amsterdam']
+
 
 
 
@@ -33,9 +18,9 @@ export class Exo2ParentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  time(zone: number): Date{
-    let date = new Date();
-    date.setHours(date.getHours()+ zone);
+  time(timezone: string): string{
+    let date = new Date().toLocaleString("fr-FR", {timeZone: timezone});
+    date.split(' ')[1];
     setInterval(() => 1000);
     return date;
   }

@@ -11,7 +11,7 @@ export class Exo2EnfantComponent implements OnInit {
   ville!:string;
 
   @Input()
-  time!:Date;
+  time!:string;
 
   constructor() { }
 

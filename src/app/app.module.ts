@@ -18,6 +18,7 @@ import { ButtonAlertComponent } from './components/button-alert/button-alert.com
 import { ButtonMenuComponent } from './components/button-menu/button-menu.component';
 import { Exo2ParentComponent } from './components/exo2-parent/exo2-parent.component';
 import { Exo2EnfantComponent } from './components/exo2-enfant/exo2-enfant.component';
+import { ListeCoursesComponent } from './components/liste-courses/liste-courses.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { Exo2EnfantComponent } from './components/exo2-enfant/exo2-enfant.compon
     ButtonAlertComponent,
     ButtonMenuComponent,
     Exo2ParentComponent,
-    Exo2EnfantComponent
+    Exo2EnfantComponent,
+    ListeCoursesComponent
   ],
   imports: [
     BrowserModule,
