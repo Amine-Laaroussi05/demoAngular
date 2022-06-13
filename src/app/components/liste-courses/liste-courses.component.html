@@ -1,12 +1,13 @@
 <!-- Afficher la liste des courses -->
 
-<ul *ngFor="let article of articles">
+<ul *ngFor="let article of articles, let index = index">
     <li>{{article}}</li>
+    <button (click)="deleteArticle(index)">Delete</button>
 </ul>
 
 
 
-<!--  -->
+<!-- Forme pour ajouter des articles -->
 
 <form (ngSubmit)="addArticle()">
     <input type="text" name="NewArticle" [(ngModel)]="newArticle">

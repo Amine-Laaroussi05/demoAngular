@@ -21,4 +21,8 @@ export class ListeCoursesComponent implements OnInit {
     this.newArticle = '';
   }
 
+  deleteArticle(index: number){
+    this.articles.splice(index,1);
+  }
+
 }
