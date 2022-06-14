@@ -56,4 +56,8 @@ export class Exo3Component implements OnInit {
     }
   }
 
+  public deleteUtilisateur(index: number){
+    this.infosUtilisateurs.splice(index, 1);
+  }
+
 }

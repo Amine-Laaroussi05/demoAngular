@@ -22,6 +22,8 @@ import { ListeCoursesComponent } from './components/liste-courses/liste-courses.
 import { ReactiveListeCoursesComponent } from './components/reactive-liste-courses/reactive-liste-courses.component';
 import { FormbuilderListeCoursesComponent } from './components/formbuilder-liste-courses/formbuilder-liste-courses.component';
 import { Exo3Component } from './components/exo3/exo3.component';
+import { DataCoursesComponent } from './components/OutputListeCourses/data-courses/data-courses.component';
+import { FormCoursesComponent } from './components/OutputListeCourses/form-courses/form-courses.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { Exo3Component } from './components/exo3/exo3.component';
     ListeCoursesComponent,
     ReactiveListeCoursesComponent,
     FormbuilderListeCoursesComponent,
-    Exo3Component
+    Exo3Component,
+    DataCoursesComponent,
+    FormCoursesComponent
   ],
   imports: [
     BrowserModule,

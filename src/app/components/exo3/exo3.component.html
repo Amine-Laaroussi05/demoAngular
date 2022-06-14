@@ -1,5 +1,5 @@
 <div class="container">
-    <div *ngFor="let infosUtilisateur of infosUtilisateurs">
+    <div *ngFor="let infosUtilisateur of infosUtilisateurs, let index = index">
         <div class="bordure">
             <div class="background">
                 <h1>
@@ -22,6 +22,9 @@
                 </div>
             </div>
         </div>
+        <div *ngIf="index !== 0">
+            <button (click)="deleteUtilisateur(index)">Supprimer</button>
+        </div>
     </div>
 </div>
 
@@ -43,7 +46,12 @@
     Nom:
       <input type="text" formControlName="nom">
       <span *ngIf="submitted && form['nom'].invalid">
-        * Nom invalide
+        <span *ngIf="form['nom'].hasError('minlength')">
+          * Le nom doit contenir au moins 2 caractères
+        </span>
+        <span *ngIf="!form['nom'].value">
+          * Nom invalide
+        </span>
       </span>
   </label>
 

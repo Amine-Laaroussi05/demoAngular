@@ -1,0 +1,19 @@
+<h3>
+    Liste des courses
+</h3>
+
+<ul>
+    <li *ngFor="let article of courses">
+        {{article.designation}}: {{article.prix}}
+    </li>
+</ul>
+
+<h4>
+    Total: {{total}}€
+</h4>
+
+<h3>
+    Ajouter un article
+</h3>
+
+<app-form-courses (onAddArticle)="addArticle($event)"></app-form-courses>

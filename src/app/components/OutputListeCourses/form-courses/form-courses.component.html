@@ -1,0 +1,19 @@
+<form [formGroup]="article" (ngSubmit)="onSubmit()">
+    <label for="designation">
+    Designation:
+    <input type="text" formControlName="designation">
+    <span *ngIf="submitted && form['designation'].invalid">
+      * Nom invalide
+    </span>
+  </label>
+
+    <label for="prix">
+    Prix:
+    <input type="number" formControlName="prix">
+    <span *ngIf="submitted && form['prix'].invalid">
+      * Prix invalide
+    </span>
+  </label>
+
+    <button type="submit">Ajouter</button>
+</form>
